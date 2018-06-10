@@ -1,4 +1,4 @@
-package eich.nickelson.common.classes;
+package eich.nickelson.common.downloading;
 
 import com.sun.net.httpserver.HttpsConfigurator;
 import eich.nickelson.common.parsing.Controller;

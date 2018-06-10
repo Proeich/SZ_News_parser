@@ -2,7 +2,7 @@ package eich.nickelson.common.classes;
 
 
 import eich.nickelson.common.downloading.Parser;
-import eich.nickelson.common.parsing.Controller;
+import eich.nickelson.common.parsing.HtmlParser;
 import org.junit.jupiter.api.Test;
 
 
@@ -10,7 +10,6 @@ public class HtmlParserTest {
 
     @Test
     public void getHolder() {
-    Controller controller = new HtmlGetter();
     Parser parser = new HtmlParser();
 
         for (HtmlFileHolder htmlFileHolder : parser.getHolder(("https://www.sueddeutsche.de//"))){

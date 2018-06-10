@@ -1,5 +1,7 @@
-package eich.nickelson.common.classes;
+package eich.nickelson.common.parsing;
 
+import eich.nickelson.common.classes.HtmlFileHolder;
+import eich.nickelson.common.downloading.HtmlGetter;
 import eich.nickelson.common.downloading.Parser;
 import eich.nickelson.common.parsing.Controller;
 
