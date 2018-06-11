@@ -1,7 +1,8 @@
-package eich.nickelson.common.downloading;
+package eich.nickelson.common.downloading.getter;
 
 import com.sun.net.httpserver.HttpsConfigurator;
 import eich.nickelson.common.parsing.Controller;
+import twitter4j.Twitter;
 
 import javax.net.ssl.HttpsURLConnection;
 import java.io.BufferedReader;
@@ -11,12 +12,12 @@ import java.io.InputStreamReader;
 import java.net.*;
 import java.util.stream.Stream;
 
-
 public class HtmlGetter implements Controller {
 
     @Override
     public String get(String urlToRead) {
         try {
+
             StringBuilder result = new StringBuilder();
 
             /*
@@ -75,11 +76,13 @@ public class HtmlGetter implements Controller {
 
 
 
-
+            /**
+             *
+             * @Param: TestSubjects
             String ss =  conn.getResponseMessage();
             String ssss = conn.getURL().toString();
             String sss = conn.getContentType();
-
+            */
             while(true){
                 String k  = rd.readLine();
                 if(k == null){
